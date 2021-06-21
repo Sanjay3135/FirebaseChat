@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fbback"
+    tools:context=".registerlogin.RegisterActivity">
+
+
+           <androidx.cardview.widget.CardView
+               android:layout_width="wrap_content"
+               android:layout_margin="22dp"
+android:layout_centerInParent="true"
+               android:layout_height="wrap_content">
+
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+
+
+
+                   <de.hdodenhof.circleimageview.CircleImageView
+                       android:id="@+id/imageView"
+                       android:layout_width="150dp"
+                       android:layout_height="150dp"
+                       app:civ_border_width="3dp"
+                       app:civ_border_color="@color/black"
+                       android:layout_marginTop="10dp"
+                       android:layout_centerHorizontal="true"
+                       android:background="@drawable/ic_baseline_account_circle_24"
+                       />
+
+                   <com.google.android.material.textfield.TextInputLayout
+                       android:id="@+id/inputlayout_name"
+                       android:layout_width="match_parent"
+                       android:layout_marginTop="20dp"
+                       android:layout_below="@id/imageView"
+                       android:layout_marginRight="32dp"
+                       android:layout_marginLeft="32dp"
+                       android:hint="User Name"
+                       app:helperText="Required*"
+                       app:errorEnabled="true"
+                       app:counterEnabled="true"
+                       app:counterMaxLength="20"
+                       app:helperTextTextColor="#AF0A0A"
+                       app:endIconMode="clear_text"
+                       app:startIconDrawable="@drawable/personfill"
+                       style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                       android:layout_height="wrap_content">
+
+                       <com.google.android.material.textfield.TextInputEditText
+                           android:id="@+id/edt_name"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:inputType="text"
+                           android:maxLength="20"
+                           android:maxLines="1"
+                           android:layout_below="@id/imageView"
+                           />
+
+                   </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                   <com.google.android.material.textfield.TextInputLayout
+                       android:layout_marginTop="15dp"
+                       android:id="@+id/inputlayou_email"
+                       style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                       android:layout_width="match_parent"
+                       android:layout_marginRight="32dp"
+                       android:layout_marginLeft="32dp"
+                       android:layout_height="wrap_content"
+                       android:hint="Email"
+                       app:helperText="Required*"
+                       app:endIconMode="clear_text"
+                       app:helperTextTextColor="#AF0A0A"
+                       app:startIconDrawable="@drawable/personemail"
+                       android:layout_below="@id/inputlayout_name"
+                       >
+
+                       <com.google.android.material.textfield.TextInputEditText
+                           android:id="@+id/edt_email"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:inputType="textEmailAddress"
+                           android:maxLines="1"
+                           />
+                   </com.google.android.material.textfield.TextInputLayout>
+
+
+                   <com.google.android.material.textfield.TextInputLayout
+                       android:layout_marginTop="15dp"
+                       android:id="@+id/inputlayout_password"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginRight="32dp"
+                       app:helperText="Required*"
+                       app:helperTextTextColor="#AF0A0A"
+                       android:hint="Password"
+                       app:startIconDrawable="@drawable/personpassword"
+                       app:endIconMode="password_toggle"
+                       android:layout_marginLeft="32dp"
+                       android:layout_below="@id/inputlayou_email"
+                       style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+                       >
+
+                       <com.google.android.material.textfield.TextInputEditText
+                           android:id="@+id/edt_password"
+                           android:layout_width="match_parent"
+                           android:inputType="textPassword"
+                           android:maxLines="1"
+                           android:layout_height="wrap_content"/>
+
+                   </com.google.android.material.textfield.TextInputLayout>
+
+
+                   <!--    <EditText-->
+                   <!--        android:layout_margin="15dp"-->
+                   <!--        android:id="@+id/edt_email"-->
+                   <!--        android:layout_width="match_parent"-->
+                   <!--        android:layout_height="wrap_content"-->
+                   <!--        android:layout_below="@+id/inputlayout"-->
+                   <!--        android:hint="Register Email"-->
+                   <!--        android:textColor="@color/black"-->
+                   <!--        />-->
+
+                   <!--    <EditText-->
+                   <!--        android:layout_margin="15dp"-->
+                   <!--        android:id="@+id/edt_password"-->
+                   <!--        android:layout_below="@id/edt_email"-->
+                   <!--        android:inputType="text"-->
+                   <!--        android:layout_width="match_parent"-->
+                   <!--        android:layout_height="wrap_content"-->
+                   <!--        android:hint="Register Password"-->
+                   <!--        android:textColor="@color/black"-->
+                   <!--        />-->
+
+                   <!--    <Button-->
+                   <!--        android:id="@+id/reg_btn"-->
+                   <!--        android:layout_width="wrap_content"-->
+                   <!--        android:layout_height="wrap_content"-->
+                   <!--        android:text="Register Account"-->
+                   <!--        android:layout_below="@id/edt_password"-->
+                   <!--        android:textAllCaps="false"-->
+                   <!--        android:layout_margin="20dp"-->
+                   <!--        android:layout_centerInParent="true"-->
+                   <!--        />-->
+                   <ImageView
+                       android:id="@+id/imgchooser"
+                       android:layout_width="40dp"
+                       android:layout_height="40dp"
+                       android:layout_alignTop="@id/inputlayout_name"
+                       android:layout_marginLeft="-31dp"
+                       android:layout_marginTop="-58dp"
+                       android:layout_toRightOf="@id/imageView"
+                       android:src="@drawable/camera" />
+
+                   <!--    <EditText-->
+                   <!--        android:layout_margin="15dp"-->
+                   <!--        android:id="@+id/edt_password"-->
+                   <!--        android:layout_below="@id/inputlayou_email"-->
+                   <!--        android:inputType="text"-->
+                   <!--        android:layout_width="match_parent"-->
+                   <!--        android:layout_height="wrap_content"-->
+                   <!--        android:hint="Register Password"-->
+                   <!--        android:textColor="@color/black"-->
+                   <!--        />-->
+
+                   <Button
+                       android:id="@+id/reg_btn"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_below="@id/inputlayout_password"
+                       android:layout_centerInParent="true"
+                       android:layout_marginTop="5dp"
+                       android:text="Register Account"
+                       android:layout_marginBottom="20dp"
+                       android:shadowColor="@color/browser_actions_bg_grey"
+                       android:backgroundTint="#FAF7F7"
+                       android:textAllCaps="false"
+                       android:textColor="@color/black" />
+
+
+               </RelativeLayout>
+
+
+           </androidx.cardview.widget.CardView>
+
+
+
+
+    <!--    <EditText-->
+<!--        android:layout_below="@id/imageView"-->
+<!--        android:layout_margin="15dp"-->
+<!--        android:id="@+id/edt_name"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Display Name"-->
+<!--        android:textColor="@color/black"-->
+<!--        />-->
+
+<!--    <EditText-->
+<!--        android:layout_margin="15dp"-->
+<!--        android:id="@+id/edt_email"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/edt_name"-->
+<!--        android:hint="Register Email"-->
+<!--        android:textColor="@color/black"-->
+<!--        />-->
+
+<!--    <EditText-->
+<!--        android:layout_margin="15dp"-->
+<!--        android:id="@+id/edt_password"-->
+<!--        android:layout_below="@id/edt_email"-->
+<!--        android:inputType="text"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Register Password"-->
+<!--        android:textColor="@color/black"-->
+<!--        />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/reg_btn"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Register Account"-->
+<!--        android:layout_below="@id/edt_password"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:layout_margin="20dp"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imgchooser"-->
+<!--        android:layout_width="40dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_alignTop="@id/edt_name"-->
+<!--        android:layout_marginLeft="-31dp"-->
+<!--        android:layout_marginTop="-58dp"-->
+<!--        android:layout_toRightOf="@id/imageView"-->
+<!--        android:src="@drawable/camera" />-->
+
+
+</RelativeLayout>

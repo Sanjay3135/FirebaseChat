@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/image"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fbback"
+    tools:context=".registerlogin.MainActivity">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:backgroundTint="@color/white"
+        android:outlineAmbientShadowColor="@color/white"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputlayout_email"
+                android:layout_width="match_parent"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginLeft="32dp"
+                android:hint="Email"
+                app:helperText="Required*"
+                app:errorEnabled="true"
+                app:helperTextTextColor="#AF0A0A"
+                app:endIconMode="clear_text"
+                app:startIconDrawable="@drawable/personfill"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:maxLength="20"
+                    android:maxLines="1"
+                    android:layout_below="@id/imageView"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginTop="25dp"
+                android:id="@+id/inputlayout_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="32dp"
+                app:helperText="Required*"
+                app:helperTextTextColor="#AF0A0A"
+                android:hint="Password"
+                app:startIconDrawable="@drawable/personpassword"
+                app:endIconMode="password_toggle"
+                android:layout_marginLeft="32dp"
+                android:layout_below="@id/inputlayout_email"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt2"
+                    android:layout_width="match_parent"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:layout_height="wrap_content"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/inputlayout_password"
+                android:layout_marginLeft="80dp"
+                android:backgroundTint="@color/teal_200"
+                android:textColor="@color/black"
+                android:layout_marginTop="15dp"
+                android:layout_centerInParent="true"
+                android:text="Login" />
+
+
+
+            <TextView
+                android:id="@+id/register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create New Account"
+                android:drawableEnd="@drawable/arrowright"
+                android:layout_marginTop="20dp"
+                android:paddingBottom="10dp"
+                android:textSize="16sp"
+                android:alpha="0.7"
+                android:layout_marginLeft="50dp"
+                android:textColor="@color/black"
+                android:layout_below="@id/btn_login"
+                android:layout_centerInParent="true"
+                />
+
+
+        </RelativeLayout>
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+<!--   <EditText-->
+<!--    android:layout_margin="15dp"-->
+<!--    android:id="@+id/edt1"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:hint="Email"-->
+<!--    android:textColor="@color/black"-->
+<!--    />-->
+
+
+
+
+
+</RelativeLayout>
